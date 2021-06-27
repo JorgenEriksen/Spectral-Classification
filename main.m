@@ -12,16 +12,12 @@ wavelength = lib.Wavelength;
 reflectance = lib.Reflectance;
 datacube = hcube.DataCube;
 
-
-% task a
 point1 = datacube(100,100,:);
 point2 = datacube(100,350,:);
 point3 = datacube(350,350,:);
 
 plot(point1(:))
 
-
-% task b
 angleThreshold = 6; %angle threshold
 figure;
 result = SAMonAllPixels(datacube, point1, angleThreshold);
